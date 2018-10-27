@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Arvo';
+    src: url('subset-Arvo.woff2') format('woff2'),
+        url('subset-Arvo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+

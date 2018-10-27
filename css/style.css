@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600|Roboto:400,700,900&subset=cyrillic');
+@font-face {
+    font-family: 'Arvo';
+    src: url('../font/subset-Arvo.woff2') format('woff2'),
+        url('../font/subset-Arvo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font: 400 14px/1.57 'Open Sans', sans-serif;
+	color: #9e9e9e;
+	
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1160px;
+}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+p{
+	margin: 0;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-karcher-header{
+	display: flex;
+	padding-top: 20px;
+	margin-bottom: 156px;
+}
+.ba-karcher__logo{
+	padding-left: 81px;
+}
+.ba-header__nav ul{
+	display: flex;
+	flex-direction: row;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+}
+.ba-header__nav ul li + li{
+	margin-left: 58px;
+}
+.ba-header__nav ul li a{
+	text-decoration: none;
+	color:  #9fa3a7;
+	font: 700 12px/1 'Roboto', sans-serif;
+	letter-spacing: 2.9px;
+	text-transform: uppercase;
+
+}
+.ba-header__nav ul li a:hover{
+	color: #FFC80A;
+}
+.ba-karcher__product{
+	display: flex;
+	margin-bottom: 73px;
+}
+.ba-karcher__title{
+
+	padding-left: 77px;
+	padding-right: 125px;
+
+
+}
+.ba-karcher__title h1{
+	font: 400 36px/1.2 'Arvo';
+	color: #292929;
+	margin-bottom: 23px;
+}
+.ba-karcher__title p{
+	line-height: 1.6;
+	margin-bottom: 39px;
+	
+}
+.ba-karcher__button button + button{
+	margin-left: 12px;
+}
+.ba-karcher__button button{
+	display: inline-block;
+	width: 170px;
+	padding: 18px 0px;
+	color: #000;
+	background: #FCC703;
+	border: 1px solid transparent;
+	border-radius: 28px;
+	letter-spacing: 2.9px;
+	text-transform: uppercase;
+	font: 700 12px/1 'Roboto', sans-serif;
+	
+}
+.ba-karcher__button button:hover{
+	background: transparent;
+	border: 1px solid#ccc;
+}
+
+.ba-svg-mouse a{
+	color: #000;
+}
+.ba-svg-mouse {
+	display: flex;
+	justify-content: center;
+	color: #000;
+}
+.ba-svg-mouse svg:hover{
+	color: red;
+	cursor: pointer;
+	transition: color .3s ease-in;
+}
+.ba-karcher-info{
+	display: flex;
+	padding: 172px 0 113px;
+
+}
+.ba-karcher__detal-info{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding-top: 14px;
+	padding-right: 9px;
+	
+}
+
+.ba-karcher__detal-info h3{
+	max-width: 391px;
+	font: 400 36px/1.2777 'Arvo';
+	color: #212121;
+	text-align: left;
+	margin-bottom: 17px;
+}
+.ba-karcher__detal-info p{
+	max-width: 391px;
+	line-height: 1.9;
+}
+.ba-performance--block{
+	padding-left: 57px;
+}
+.ba-karcher__performance{
+	display: flex;
+	margin-bottom: 73px;
+	
+}
+.ba-karcher__performance img{
+	display: block;
+	max-height: 65px;
+	margin-right: 36px;
+
+}
+.ba-performance{
+	max-width: 270px;
+	padding-top: 11px;
+
+
+}
+.ba-performance h4{
+	font: 400 22px/1.22 'Arvo';
+	color:  #353535;
+	margin-bottom: 10px;
+}
+.ba-performance p{
+	line-height: 1.9;
+	max-width: 226px;
+}
+.ba-performance--img{
+	position: relative;
+}
+.ba-performance--img::before{
+	position: absolute;
+	top: -40px;
+	left: 23px;
+	content: "";
+	width: 319px;
+	border: 1px  solid#E9E9E9;
+}
+.ba-performance--img img{
+	margin-right: 43px;
+}
+.ba-performance--text{
+	padding-top: 22px;
+}
+.ba-section-bg{
+	background: url(../img/karcher-pivosos.jpg) 100% -150%;
+	background-repeat: no-repeat;
+}
+.ba-karcher-specifications{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	padding: 100px 0 183px;
+}
+.ba-karcher-specifications h3{
+	font: 400 36px/1.277 'Arvo';
+	color:  #212121;
+	max-width: 403px;
+	margin-bottom: 28px;
+}
+.ba-karcher-specifications ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.ba-karcher-specifications ul li {
+	margin-bottom: 7px;
+}
+.ba-karcher__form{
+	display: flex;
+	padding: 143px 0;
+}
+.ba-product__price h3{
+	font: 400 32.18px/1.28 'Arvo';
+	color:  #292929;
+	max-width: 314px;
+	margin-bottom: 16px;
+	padding-left: 41px;
+}
+.ba-product__price span{
+	font: 900 79.99px/1 'Roboto', sans-serif;
+	color:  #2c2c2c;
+	padding-left: 41px;
+}
+.ba-form__label{
+	display: flex;
+	margin-bottom: 33px;
+	align-items: center;
+}
+.ba-form__label input{
+	border: none;
+	border-bottom: 1px solid#cccc;
+	padding: 6px 9px;
+	position: relative;
+	color: #000;
+	font: 600 13.56px/1 'Open Sans', sans-serif;
+}
+.ba-form__label input:focus{
+	outline: none;
+}
+.ba-form__label input:valid{
+	background: url(../img/chekmark.png) 98% 30%;
+	background-repeat: no-repeat;
+}
+.ba-form__label input::placeholder{
+	text-align: right;
+	color: red;
+	font-size: 20px;
+}
+.ba-button--form{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 33px;
+}
+.ba-button--form p{
+	margin-right: 61px;
+	
+}
+.ba-button--form p span{
+	color: red;
+	font-size: 20px;
+	margin-right: 9px;
+	
+}
+.ba-button--form button{
+	width: 195px;
+	color: #fff;
+	font: 400 12px/1.2 'Roboto', sans-serif;
+}
+.ba-button--form button:hover{
+	color: #000;
+}
+.ba-form__label label{
+	font: 700 11.62px/2.23 'Roboto', sans-serif;
+	color:  #9fa3a7;
+	letter-spacing: 1.28px;
+	width: 50%;
+	text-transform: uppercase;
+	text-align: right;
+	padding-right: 17px;
+	
+}
+.ba-col-6 form{
+	padding-right: 71px;
+	padding-top: 56px;
+}
+.ba-comment{
+	padding: 145px 0 0;
+
+}
+.ba-karcher__comment::before{
+	position: absolute;
+	top: -73px;
+	content:"";
+	background: url(../img/icon.png);
+	width: 41px;
+	height: 27px;
+	left: 48%;
+}
+.ba-karcher__comment{
+	max-width: 790px;
+	margin: 0 auto;
+	margin-bottom: 84px;
+	position: relative;
+}
+.ba-karcher__comment p{
+	font: 400 36px/1.277 'Arvo';
+	color:  #2c2c2c;
+}
+.ba-comment__people{
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	align-items: center;
+	margin-bottom: 31px;
+
+	
+}
+.ba-comment__people::after{
+	content: "";
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 3px;
+	background-color:  #e8e9ed;
+	z-index: -1;
+}
+.ba-comment__people img{
+	height: 100%;
+	padding-bottom: 24px;
+}
+.ba-people__info{
+	width: 100%;
+	text-align: center;
+}
+.ba-center__people{
+	border-bottom: 3px solid#F65839;
+}
+.ba-name-people span{
+	text-align: center;
+	font:  400 21.97px/1 'Arvo';
+	color:  #2c2c2c;
+	text-transform: none;
+}
+.ba-name-people p{
+	text-align: center;
+	font: 700 11.98px/2.1 'Roboto', sans-serif;
+	color:  #9fa3a7;
+	letter-spacing: 1.9px;
+	text-transform: uppercase;
+}
+.ba-footer{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 45px;
+}
+.ba-footer-info{
+	display: flex;
+	align-items: center;
+}
+.ba-footer-info ul{
+	list-style: none;
+	display: inline-flex;
+	padding: 0;
+	margin: 0;
+	font: 900 11.55px/2.3 'Roboto', sans-serif;
+	letter-spacing: 2.8px;
+	text-transform: uppercase;
+
+
+}
+.ba-footer-info ul li + li{
+	margin-left: 33px;
+}
+.ba-footer-info ul li a{
+	color:  #6c6c6c;
+	text-decoration: none;
+}
+.ba-footer-info ul li a:hover{
+	color: #FFC80A;
+}
+.ba-footer__social{
+	display: flex;
+	align-items: center;
+}
+.ba-footer__social a svg{
+    font-size: 24px;
+	color: #6c6c6c;
+}
+.ba-footer__social a + a{
+	margin-left: 33px;
+}
+.ba-footer__social svg:hover{
+	color: #FFC80A;
+	cursor: pointer;
+}
+.data{
+	font: 900 11.55px/5 'Roboto', sans-serif;
+	text-transform: uppercase;
+	color:  #9e9e9e;
+	letter-spacing: 1.9px;
+	text-align: center;
+	
+}
